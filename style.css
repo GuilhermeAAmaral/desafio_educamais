@@ -5,6 +5,7 @@
     padding: 0px;
 }
 
+
 body {
     font-family: Open Sans;
 }
@@ -18,11 +19,14 @@ header {
 
 .menu_nav {
     margin-right: 30px;
+
 }
 
 .button_header {
     background-color: #efefef;
-    margin: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 18px;
     height: 30px;
     width: 120px;
     font-weight: 700;
@@ -41,7 +45,9 @@ header {
 .button_sociais {
     background-color: #efefef;
     margin-top: 10px;
-    margin-left: 15px;
+    position: relative;
+    left: 40px;
+    margin-left: 10px;
     height: 30px;
     width: 30px;
     font-weight: 700;
@@ -62,7 +68,7 @@ header {
 }
 
 img {
-    width: 200px;
+    width: 180px;
 }
 
 input {
@@ -70,7 +76,6 @@ input {
     height: 30px;
     border-radius: 5px;
     border: 1px solid #999999;
-    margin-right: 30px;
     font-style: italic;
 }
 
@@ -82,8 +87,15 @@ input {
     height: 50px;
 }
 
+span {
+    color: white;
+    font-size: 25px;
+    font-weight: 100;
+}
+
+
 .menu_nav2 {
-    margin-right: 30px;
+    margin-right: 20px;
 }
 
 .button_nav_cursos {
@@ -94,6 +106,14 @@ input {
     height: 30px;
     width: 150px;
     font-weight: 600;
+}
+
+.button_nav_cursos {
+    background-color: #a30000;
+    border: #a30000;
+    color: white; 
+    font-weight: 600;
+    
 }
 
 .button_nav_cursos:hover {
@@ -108,14 +128,14 @@ input {
 
 .div_resultado_busca {
     margin-top: 50px;
-    margin-left: 215px;
+    margin-left: 120px;
     font-size: 20pt;
     color: #3d3d3d;
 }
 
 .div_resultado_refinado {
     margin-top: 50px;
-    margin-left: 215px;
+    margin-left: 120px;
     font-size: 15pt;
     color: #3d3d3d;
 }
@@ -131,13 +151,13 @@ input {
     margin-top: 20px;
     margin-bottom: 20px;
     height: 120px;
-    width: 900px;
+    width: 1090px;
     border-left: 20px solid #a30000;   
     box-shadow: 5px 5px 5px #8A8A8A;
 }
 
 .card_resultado_cursos:hover {
-    width: 850px;
+    width: 1040px;
     border-right: 50px solid #a30000;
     cursor: pointer;   
 }
@@ -174,13 +194,13 @@ input {
     margin-top: 20px;
     margin-bottom: 20px;
     height: 120px;
-    width: 900px;
+    width: 1090px;
     border-left: 20px solid green;   
     box-shadow: 5px 5px 5px #8A8A8A;
 }
 
 .card_resultado_cursos_extensao:hover {
-    width: 850px;
+    width: 1040px;
     border-right: 50px solid green;
     cursor: pointer;   
 }
@@ -207,18 +227,17 @@ input {
     color: white;
 }
 
-
 .card_resultado_cursos_capacitacao {
     margin-top: 20px;
     margin-bottom: 20px;
     height: 120px;
-    width: 900px;
+    width: 1090px;
     border-left: 20px solid rgb(228, 164, 27);   
     box-shadow: 5px 5px 5px #8A8A8A;
 }
 
 .card_resultado_cursos_capacitacao:hover {
-    width: 850px;
+    width: 1040px;
     border-right: 50px solid rgb(228, 164, 27);
     cursor: pointer;   
 }
@@ -245,30 +264,394 @@ input {
     color: white;
 }
 
+.logo_footer {
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 70px;
+    margin-left: 120px;
+}
+
 footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
 .footer_institucional {
-    margin-left: 50px;
+    margin-left: 120px;
+    margin-right: 25px;
 }
 
 .footer_estilizacao {
     margin-top: 20px;
     padding-bottom: 30px;
     color: #454545;
-    font-size: 12pt;
+    font-size: 11pt;
+    width: 400px;
+}
+
+.contatos_footer {
+    color: #454545;
+    font-family: Open sans;
+    font-size: 11pt;
+    font-weight: 500;
+    display: inline;    
+}
+
+.contatos_footer_p {
+    color: #454545;
+    font-family: Open sans;
+    font-size: 11pt;
+    margin-left: 20px;
+    padding-bottom: 2px;
+    padding-top: 5px;
+    font-weight: 500;
 }
 
 h3 {
-    margin-bottom: 10px;;
+    margin-bottom: 10px;
 }
 
-.footer_redes:hover{
-    cursor: pointer;
+.footer_redes{
+    display: flex;
+}
+
+.footer_c_redes {
+    margin-right: 20px;
+}
+
+.footer_c_redes:hover {
+   cursor: pointer;
 }
 
 .footer_politica {
-    margin-top: 200px;
+    margin-top: 150px;
+    color: #454545;
+    font-weight: bold;
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+
+    header {
+        display: inline-block;
+        background-color: #efefef;
+        height: 150px;
+        width: auto;
+        padding-bottom: 20px;
+    }
+    
+    .menu_nav {
+        margin: 0px;
+        margin-top: 15px;
+        width: auto;
+    }
+    
+    .button_header {
+        background-color: #efefef;
+        position: relative;
+        left: 40px;
+        height: 30px;
+        width: 120px;
+        font-weight: 700;
+        color: #a30000;
+        border: 1px solid #a30000;
+        border-radius: 5px; 
+    }
+    
+    .button_header:hover {
+        background-color: #a30000;
+        color: white;
+        cursor: pointer;
+    }
+    
+    .button_sociais {
+        background-color: #efefef;
+        margin-top: 10px;
+        position: relative;
+        left: 100px;
+        font-weight: 700;
+        color: #a30000;
+        border: 1px solid #a30000;
+        border-radius: 5px;
+    }
+    
+    .button_sociais:hover {
+       cursor: pointer;
+    }
+    
+    .logo_e_inputBuscar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    img {
+        width: 320px;
+        margin: auto;
+        padding-bottom: 25px;
+    }
+    
+    input {
+        width: 350px;
+        height: 30px;
+        border-radius: 5px;
+        border: 1px solid #999999;
+        font-style: italic;
+    }
+    
+    .nav_cursos {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: #a30000;
+        height: 50px;
+    }
+    
+    span {
+        color: white;
+        font-size: 15px;
+        font-weight: 100;
+    }
+    
+    .menu_nav2 {
+        margin-right: 10px;
+    }
+    
+    .button_nav_cursos {
+        background-color: #a30000;
+        color: white;
+        border: none;
+        height: 30px;
+        width: 80px;
+        font-weight: 100;
+        font-size: 9px;
+    }
+    
+    .button_nav_cursos:hover {
+        cursor: pointer;
+    }
+    
+    .div_busca {
+        margin-top: 20px;
+        margin-left: 10px;
+        font-style: italic;
+    }
+    
+    .div_resultado_busca {
+        margin-top: 50px;
+        margin-left: 10px;
+        font-size: 20pt;
+        color: #3d3d3d;
+    }
+    
+    .div_resultado_refinado {
+        margin-top: 50px;
+        margin-left: 10px;
+        font-size: 15pt;
+        color: #3d3d3d;
+    }
+    
+    .resultado_cursos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .card_resultado_cursos {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        height: 200px;
+        width: 330px;
+        border-left: 10px solid #a30000;   
+        box-shadow: 5px 5px 5px #8A8A8A;
+    }
+    
+    .card_resultado_cursos:hover {
+        width: 320px;
+        border-right: 10px solid #a30000;
+        cursor: pointer;   
+    }
+    
+    .titulo_curso{
+        margin-top: 30px;
+        margin-left: 10px;
+        color: #454545;
+    }
+    
+    .button_duracao {
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 20px;
+        padding: 5px;
+        background-color: white;
+        border: 1px solid #454545 ;
+        border-radius: 15px;
+        width: 160px;
+        color: #454545;
+    }
+    
+    .button_valor {
+        margin-top: 10px;
+        margin-left: 10px;
+        padding: 5px;
+        background-color:#a30000;
+        border: 1px solid #a30000;
+        border-radius: 15px;
+        width: 300px;
+        color: white;
+    }
+    
+    .card_resultado_cursos_extensao {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        height: 200px;
+        width: 330px;
+        border-left: 10px solid green;   
+        box-shadow: 5px 5px 5px #8A8A8A;
+    }
+    
+    .card_resultado_cursos_extensao:hover {
+        width: 320px;
+        border-right: 10px solid green;
+        cursor: pointer;   
+    }
+    
+    .button_duracao_extensao {
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 20px;
+        padding: 5px;
+        background-color: white;
+        border: 1px solid #454545 ;
+        border-radius: 15px;
+        width: 160px;
+        color: #454545;
+    }
+    
+    .button_valor_extensao {
+        margin-top: 10px;
+        margin-left: 10px;
+        padding: 5px;
+        background-color: green;
+        border: 1px solid green;
+        border-radius: 15px;
+        width: 300px;
+        color: white;
+    }
+    
+    .card_resultado_cursos_capacitacao {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        height: 200px;
+        width: 330px;
+        border-left: 10px solid rgb(228, 164, 27);   
+        box-shadow: 5px 5px 5px #8A8A8A;
+    }
+    
+    .card_resultado_cursos_capacitacao:hover {
+        width: 320px;
+        border-right: 10px solid rgb(228, 164, 27);
+        cursor: pointer;   
+    }
+    
+    .button_duracao_capacitacao {
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 20px;
+        padding: 5px;
+        background-color: white;
+        border: 1px solid #454545 ;
+        border-radius: 15px;
+        width: 160px;
+        color: #454545;
+    }
+    
+    .button_valor_capacitacao {
+        margin-top: 10px;
+        margin-left: 10px;
+        padding: 5px;
+        background-color: rgb(228, 164, 27);
+        border: 1px solid;
+        border-radius: 15px;
+        width: 300px;
+        color: white;
+    }
+    
+    .logo_footer {
+        width: 320px;
+        margin: auto;
+        padding-bottom: 25px;
+    }
+    
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .footer_selos {
+        width: 240px;
+        position: relative;
+        right: 20px;
+    }
+
+    .footer_institucional {
+        position: relative;
+        right: 50px;
+    }
+    
+    .footer_estilizacao {
+        margin-top: 20px;
+        padding-bottom: 30px;
+        color: #454545;
+        font-size: 11pt;
+        width: 250px;
+    }
+    
+    .contatos_footer {
+        color: #454545;
+        font-family: Open sans;
+        font-size: 11pt;
+        font-weight: 500;
+        display: inline;    
+    }
+    
+    .contatos_footer_p {
+        color: #454545;
+        font-family: Open sans;
+        font-size: 11pt;
+        margin-left: 20px;
+        padding-bottom: 2px;
+        padding-top: 5px;
+        font-weight: 500;
+    }
+    
+    h3 {
+        margin-bottom: 10px;
+    }
+    
+    
+    .footer_redes{
+        display: flex;
+    }
+    
+    .footer_c_redes {
+        margin-right: 20px;
+    }
+    
+    .footer_c_redes:hover {
+       cursor: pointer;
+    }
+    
+    .footer_politica {
+        margin-top: 150px;
+        margin-bottom: 50px;
+        color: #454545;
+        font-weight: bold;
+    }
+
+ 
 }
